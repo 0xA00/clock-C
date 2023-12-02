@@ -253,11 +253,9 @@ int main(int argc, char *argv[])
        if (flags[0] == TRUE)
        {
            width = width - 15;
-           printClock(hour, minute, second, width, height, TRUE);
-       }else if (flags[0] == FALSE)
-       {
-           printClock(hour, minute, second, width, height, FALSE);
        }
+        printClock(hour, minute, second, width, height, flags[0]);
+       
       
 
 
